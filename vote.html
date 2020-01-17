@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Voting page</title>
+<script type="text/javascript">
+var voteA = 0;
+var voteB = 0;
+function votecandidateA(){
+voteA = voteA + 1;
+document.getElementById('voteA').innerHTML = voteA;
+}
+
+function votecandidateB(){
+voteB = voteB + 1;
+document.getElementById('voteB').innerHTML = voteB;
+}
+</script>
+<style>
+.button {
+  background-color:light pink;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+body
+    {
+	  background-color: orange;
+	}
+</style>
+</head>
+
+<body>
+<div style="background-color:brown">
+<h1 align="center">Voting</h1>
+</div>
+<table align="center"> 	
+<tr>
+<td id="voteA" align="center"> <h1> 0 </h1></td>
+<td width ="100"></td>
+<td id="voteB" align="center"> <h1> 0 </h1></td>
+</tr>
+<tr>
+<td><img src="bjp.jpg" width="400" height="400"></td>
+<td width ="100"></td>
+<td><img src="congress.jpg" width="400" height="400"></td>
+</tr>
+<tr>
+<td align="center"><button class="button" id="b1" onclick="votecandidateA();">Vote</button></td>
+<td width="100"></td>
+<td align="center"><button class="button" id="b2" onclick="votecandidateB();">Vote</button></td>
+</table>
+
+
+</body>
+</html>
+
